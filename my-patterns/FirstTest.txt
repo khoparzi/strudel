@@ -1,0 +1,4 @@
+"<c3 eb3 g3>".scale('C minor')
+    .superimpose(
+        scaleTranspose("2,4").fast(2)
+    ).every(4, fast(2))
