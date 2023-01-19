@@ -1,0 +1,12 @@
+// Needless jazz
+// Patternuary 3
+// adapted from an example from Strudel
+
+  "0,3,[9 7 5]"
+    .add("<0 1 2 3 4 5 7 8>")
+    .scale('C ritusen')
+    .transpose("<0 3 -5 1>/8").color('gold')
+    .every(3, x=>x.transpose("2").ply("1 <1 2>/5").color('lightgreen'))
+    .every(12, y=>y.echo(6, 1/6, 0.25).color('yellowgreen'))
+    .note().piano().cutoff(saw.range(300, 1200).slow(3.4))
+    .pianoroll({minMidi: 50})

@@ -1,0 +1,14 @@
+// Still no title #patternuary 2 for 2023
+
+stack(
+  "<0 0 0 0 2 4 7 11 14 16>"
+    .scale('E minor')
+    .color('salmon')
+    .chunk(4, off(1/12, x=>x.scaleTranspose(2).color('green')))
+    .off(1/8, x=>x.scaleTranspose(4).color('cadetblue'))
+    .off(1/4, x=>x.scaleTranspose(-2).color('steelblue'))
+    .every(8, x=>x.off(0.5, rev))
+    .legato(.35)
+    .note().piano().echo(4, 1/2, 0.5)
+    .pianoroll()
+).slow(2)

@@ -1,0 +1,16 @@
+// Strudel Dandy #patternuary 5 for 2023
+// Using Native Instruments Massive based on a default patch called Digital Dandy
+
+stack(
+  "[C4(<3 3 3>,4)]!3 D#4*<1 1 1 1 1 2>".slow(2).transpose("<-24!7 12>")
+    .note().legato(saw.range(0.25, 1).slow(16))
+    .midi('IAC Driver Bus 1'),
+  "0*<2 2 2 2 2 [4 2]>".s("bassdrum1").end(0.215).n("4").hcutoff(200).shape(0.7).gain(0.3),
+  "0*<2 2 2 [4 2]>".s("RolandTR808_bd").n("2").hcutoff(100),
+  s("~ RolandTR808_oh").fast(2).gain(0.84).cutoff(2200),
+  s("~ <~ ~ ~ timpani_roll>").fast(2).n(3).gain(1.2).end(saw.range(0.005, 0.03).slow(4)).speed(2),
+  s("~ tom_stick").fast(seq(2, 2, 2, 4)).speed(1.1).gain(1.5),
+  s("RolandTR808_ht*8").every(4, chunk(4, fast(2)))
+    .speed(tri.range(1, 2.5).slow(14.5))
+    .gain(0.7).hcutoff(800).gain(.7)
+).fast(1.1)
