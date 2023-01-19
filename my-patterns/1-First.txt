@@ -1,0 +1,13 @@
+stack(
+  note("c2*4").chunk(8, fast("<1 1 1 1 2 2 4>")).gain(tri.slow(5.3)),
+  note("d2*4").chunk(4, fast("<3 2 1>")),
+  note("<f2*6 f2*6 f2*6 f2*6 f3*6 f3*6 f3*6>").pan(rand).delay(0.12).delaytime(1/8),
+  note("c3*8").gain(saw.slow(5.4).rev()),
+  note("d3*8").slow("<1 2 4>").gain(saw.slow(3.4)),
+  note("c1 f1").off(0.25, iter(3)).attack(saw.slow(16).range(0,0.5)).slow(2)
+).s('vibraphone')
+  .cutoff(tri.range(200,1000).slow(14.3))
+  .resonance(0.35)
+  .decay(.25)
+  .slow(4)
+  .pianoroll({})
