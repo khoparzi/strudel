@@ -6,18 +6,36 @@
         "akBlip/C4.wav"
     ],
     "akBlipLong": [
-        "akBlip/C1.wav",
-        "akBlip/C2.wav",
-        "akBlip/C3.wav",
-        "akBlip/ODD.wav",
-        "akBlip/ODD1.wav"
+        "akBlipLong/C1.wav",
+        "akBlipLong/C2.wav",
+        "akBlipLong/C3.wav",
+        "akBlipLong/ODD.wav",
+        "akBlipLong/ODD1.wav"
     ],
     "akCutup": [
-        "00-CutUpBreak.wav",
-        "01-CutUpBreak.wav",
-        "02-CutUpBreak.wav",
-        "03-CutUpBreak.wav",
-        "04-CutUpBreak.wav",
-        "05-CutUpBreak.wav"
+        "akCutup/00-CutUpBreak.wav",
+        "akCutup/01-CutUpBreak.wav",
+        "akCutup/02-CutUpBreak.wav",
+        "akCutup/03-CutUpBreak.wav",
+        "akCutup/04-CutUpBreak.wav",
+        "akCutup/05-CutUpBreak.wav"
+    ],
+    "akShooter": [
+        "akShooter/C1.wav",
+        "akShooter/C2.wav",
+        "akShooter/C3.wav"
+    ],
+    "etAmin": [
+        "etAmin/000.wav","etAmin/001.wav","etAmin/002.wav","etAmin/003.wav",
+        "etAmin/004.wav","etAmin/005.wav","etAmin/006.wav","etAmin/007.wav",
+        "etAmin/008.wav","etAmin/009.wav","etAmin/010.wav","etAmin/011.wav",
+        "etAmin/012.wav","etAmin/013.wav","etAmin/014.wav","etAmin/015.wav",
+        "etAmin/016.wav","etAmin/017.wav","etAmin/018.wav","etAmin/019.wav",
+        "etAmin/020.wav","etAmin/021.wav","etAmin/022.wav","etAmin/023.wav",
+        "etAmin/024.wav","etAmin/025.wav","etAmin/026.wav","etAmin/027.wav",
+        "etAmin/028.wav","etAmin/029.wav"
+    ],
+    "etPadAmin": [
+        "etPadAmin/000.wav"
     ]
 }
