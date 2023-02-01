@@ -1,0 +1,23 @@
+{
+    "akBlip": [
+        "akBlip/C1.wav",
+        "akBlip/C2.wav",
+        "akBlip/C3.wav",
+        "akBlip/C4.wav"
+    ],
+    "akBlipLong": [
+        "akBlip/C1.wav",
+        "akBlip/C2.wav",
+        "akBlip/C3.wav",
+        "akBlip/ODD.wav",
+        "akBlip/ODD1.wav"
+    ],
+    "akCutup": [
+        "00-CutUpBreak.wav",
+        "01-CutUpBreak.wav",
+        "02-CutUpBreak.wav",
+        "03-CutUpBreak.wav",
+        "04-CutUpBreak.wav",
+        "05-CutUpBreak.wav"
+    ]
+}
