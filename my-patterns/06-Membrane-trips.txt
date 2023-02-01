@@ -1,0 +1,6 @@
+// Membrane trips - Patternuary #6
+
+n("<8 1 8 [2 ~ 1] [1 [~ 10 11]]> [10 ~ 11] <12 14 15>")
+  .s('framedrum')
+  .speed(saw.range(0.5, 1.7).slow(54))
+  .echo(2, 0.5, saw.range(0.125, 0.25).slow(4.5))
