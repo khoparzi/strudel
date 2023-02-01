@@ -1,0 +1,18 @@
+// Brazzers - Patternuary #7
+
+// Using my custom samples so you might have to do something like this to make it work
+// samples({
+//     akBlip: [
+//         "akBlip/C1.wav",
+//         "akBlip/C2.wav",
+//         "akBlip/C3.wav",
+//         "akBlip/C4.wav"
+//     ]
+// }, 'github:khoparzi/supercontinent/main/');
+n("0 [1 2 3]").s('akBlip')
+  .end(saw.range(0.1, 0.7).slow(43.3))
+  .cutoff(tri.range(400, 6000).slow(54.4))
+  .resonance(0.4)
+  .every(3, x=>x.rev().fast(2))
+  .chunk(5, y=>y.speed("[2,0.5]"))
+  .echo(3, 0.25, 0.6)
