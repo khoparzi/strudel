@@ -1,0 +1,12 @@
+// Overload - #Patternuary 8 for 2023
+
+stack(
+  n("0 1 2 3").s('akCutup').gain(0.3)
+    .end(saw.range(0.5, 0.7).slow(43.3))
+    .hcutoff(tri.range(200, 600).slow(54.4))
+    .every(3, x=>x.rev())
+    .every(8, w=>w.chunk(2, y=>y.fast(2)))
+    .every(32, z=>z.echo(5, 0.25, 0.6))
+  , n("~ <0 1 2 3>").s('akShooter').gain(0.5).cutoff(600).resonance(0.4).speed("[0.25,0.75]").slow(4).echo(7, 0.25, 0.7)
+  , note("<60 65 67>").s('etPadAmin').slow(4).gain(4.5)
+).fast(1.4)
