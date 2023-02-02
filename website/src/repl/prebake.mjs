@@ -12,7 +12,8 @@ export async function prebake() {
     samples(`./vcsl.json`, 'github:sgossner/VCSL/master/'),
     samples(`./tidal-drum-machines.json`, 'github:ritchse/tidal-drum-machines/main/machines/'),
     samples(`./EmuSP12.json`, `./EmuSP12/`),
-    samples(`./supercontinent.json`, 'github:khoparzi/supercontinent/main/')
+    samples(`./supercontinent.json`, 'github:khoparzi/supercontinent/main/'),
+    samples(`./khoparzi-public.json`, 'github:khoparzi/public-samples/main/')
     // samples('github:tidalcycles/Dirt-Samples/master'),
   ]);
 }
