@@ -1,0 +1,17 @@
+// Gettin somewhere - #Patternuary 10 for 2023
+
+stack(
+  begin("<0 0.25*2 0 0.125*2>").s('breaks').loopAt(2).cut(1).cutoff(tri.range(1200, 5000).slow(8))
+  , s("etPadAmin:10/8").speed(0.5).gain(7).cut(2).shape(0.7)
+  , begin("<0 ~ [0.5!3 ~] 0.75*4>").s('breaks:2').loopAt(2).cut(3).hcutoff(400).cutoff(2000)
+  , "<[0,3,6] [0,3,6] [0,4,6] [7,4,7]>/2"
+      .scale('A minor').scaleTranspose("<0 0 0 3 4>")
+      .note().piano()
+      .late("<0 0 0 0.25>")
+  , "0 1 2 3 4 5 6 7"
+      .scale('A minor')
+      .every(4, x=>x.scaleTranspose(4))
+      .note().piano()
+      .late("<0 0 0 0.25>")
+      .every(6, y=>y.off(0, rev()))
+)
