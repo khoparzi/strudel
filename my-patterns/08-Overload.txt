@@ -1,5 +1,25 @@
 // Overload - #Patternuary 8 for 2023
 
+// Using my custom samples so you might have to do something like this to make it work
+// on mainline Strudel
+// samples({
+    // akCutup: [
+    //     "akCutup/00-CutUpBreak.wav",
+    //     "akCutup/01-CutUpBreak.wav",
+    //     "akCutup/02-CutUpBreak.wav",
+    //     "akCutup/03-CutUpBreak.wav",
+    //     "akCutup/04-CutUpBreak.wav",
+    //     "akCutup/05-CutUpBreak.wav"
+    // ],
+    // akShooter: [
+    //     "akShooter/C1.wav",
+    //     "akShooter/C2.wav",
+    //     "akShooter/C3.wav"
+    // ],
+    // "etPadAmin": [
+    //     "etPadAmin/000.wav"
+    // ]
+// }, 'github:khoparzi/supercontinent/main/');
 stack(
   n("0 1 2 3").s('akCutup').gain(0.3)
     .end(saw.range(0.5, 0.7).slow(43.3))
