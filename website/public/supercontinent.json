@@ -20,10 +20,26 @@
         "akCutup/04-CutUpBreak.wav",
         "akCutup/05-CutUpBreak.wav"
     ],
+    "akGlitchpick": [
+        "akGlitchpick/Odd1.wav", "akGlitchpick/Odd2.wav", "akGlitchpick/Odd3.wav", "akGlitchpick/Odd4.wav",
+        "akGlitchpick/Odd5.wav", "akGlitchpick/Odd6.wav", "akGlitchpick/Odd7.wav"
+    ],
+    "akMech": [
+        "akMech/00-Mechanised.wav",
+        "akMech/01-Mechanised.wav",
+        "akMech/02-Mechanised.wav",
+        "akMech/03-Mechanised.wav"
+    ],
     "akShooter": [
         "akShooter/C1.wav",
         "akShooter/C2.wav",
         "akShooter/C3.wav"
+    ],
+    "akTrashR": [
+        "akTrashR/00-akTrashRide.wav",
+        "akTrashR/01-akTrashRide.wav",
+        "akTrashR/02-akTrashRide.wav",
+        "akTrashR/03-akTrashRide.wav"
     ],
     "etAmin": [
         "etAmin/000.wav","etAmin/001.wav","etAmin/002.wav","etAmin/003.wav",
