@@ -1,0 +1,73 @@
+stack(
+    cat(
+      // "c6 ~ ~ c6 d6 [ds6 d6] c6 as5",
+      // "~ c6 ~ c6 d6 [ds6 d6] c6 as5",
+      // "c6 ~ d6 ~ ds6 ~ f6 [g6 ds6]",
+      // "d6 ~ d6 ~ f6 ds6 d6 c6"
+    )
+    // .late("<0 0 0 0.25>")
+    // .transpose("<0 0 0 3>/4")
+    .note().piano().slow(2)
+    // .decay(0.3).sus(0.1)
+    //.delay(0.3).dt(1/6).dfb(saw.range(0.4, 0.6).slow(5.6)).orbit(2)
+    , cat(
+      // "[~ c2]*4"
+      // "[[~ c d ds]]*4"
+      "c(3,8) [~ [~ c d ds]]"
+      // , "f*2 [~ f ~!2] g ~"
+    ).transpose("<0 0 3 5>").note().s('sawtooth').slow(2)
+    .sustain(0.2).decay(0.21)
+    .lpf(tri.range(300, 7000).slow(4.3))
+    .lpq(0.7)
+    //.every(4, x=>x.delay(0.4).dt(1/6).dfb(0.9))
+    .hpf(500)
+    , stack(
+          // s("[bd*<4!7 [8 4]>]"),
+          // s("[~ <oh:2>]*4").cutoff(tri.range(300, 2000).slow(4.9)),
+          // s("hh:3*16").speed(tri.range(1.2, 1.8).slow(5.9)).decay(0.1)
+            // .chunk(4, x=>x.fast(2))
+          // , s("[~ sd:3]*<2>")
+      ).bank("RolandTR909")
+      .slow(2)
+)
+
+// if x is 1 keep fast 1
+// if x is 0.5 keep fast 2
+// if x is 0.75 keep fast 4
+
+const tailRepeat = (x) => { x.zoom(1 - (1/4), 1).fast(4) }
+
+stack(
+    cat(
+      "c6 ~ ~ c6 d6 [ds6 d6] c6 as5",
+      "~ c6 ~ c6 d6 [ds6 d6] c6 as5",
+      "c6 ~ d6 ~ ds6 ~ f6 [g6 ds6]",
+      "d6 ~ d6 ~ f6 ds6 d6 c6"
+    )
+    .late("<0 0 0 0.25>")
+    // .transpose("<0 0 0 3>/4")
+    .note().piano().slow(2)
+    // .decay(0.3).sus(0.1)
+    // .delay(0.3).dt(1/6).dfb(saw.range(0.4, 0.6).slow(5.6)).orbit(2)
+    , cat(
+        // "[~ c2]*4"
+      // "[[~ c d ds]]*4",
+      "c(3,8) [~ [~ c d ds]]"
+    // , "f*2 [~ f ~!2] g ~"
+    ).transpose("<0 0 3 5>").note().s('sawtooth').slow(2)
+    .sustain(0.2).decay(0.21)
+    .lpf(tri.range(300, 7000).slow(4.3))
+    .lpq(0.7)
+    //.every(4, x=>x.delay(0.4).dt(1/6).dfb(0.9))
+    .hpf(500)
+    , stack(
+          s("[bd:3*<4!7 [8 4]>]"),
+          // s("[~ <oh:2>]*4").cutoff(tri.range(300, 2000).slow(4.9)),
+          s("hh:4*8")
+            .speed(1.2)
+            // .speed(tri.range(1.2, 1.8).slow(5.9)).decay(0.1)
+            //.chunk(4, x=>x.fast(2)).hpf(1200)
+          , s("[~ sd:3]*<2>")
+      ).bank("RolandTR909")
+      .slow(2)
+)
